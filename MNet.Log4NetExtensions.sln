@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNet.Log4NetExtensions", "MNet.Log4NetExtensions\MNet.Log4NetExtensions.csproj", "{1F69C600-9858-441F-9EA5-5BA6D52A4776}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNet.Log4NetExtensions.Console", "MNet.Log4NetExtensions.Console\MNet.Log4NetExtensions.Console.csproj", "{EB7067A2-04ED-4D1C-818C-D255CF5A7552}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1F69C600-9858-441F-9EA5-5BA6D52A4776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F69C600-9858-441F-9EA5-5BA6D52A4776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F69C600-9858-441F-9EA5-5BA6D52A4776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB7067A2-04ED-4D1C-818C-D255CF5A7552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB7067A2-04ED-4D1C-818C-D255CF5A7552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB7067A2-04ED-4D1C-818C-D255CF5A7552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB7067A2-04ED-4D1C-818C-D255CF5A7552}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
