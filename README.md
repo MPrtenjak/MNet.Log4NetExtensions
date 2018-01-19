@@ -53,3 +53,7 @@ __BufferSize__ = _3 messages_
 |35 | M7 | M7 | None | Messages M5 and M6 are too old so they are thrown out of the buffer |
 
 ... and so on ...
+
+## nuget
+
+You can download binaries from nuget:  https://www.nuget.org/packages/MNet.Log4NetExtensions/
