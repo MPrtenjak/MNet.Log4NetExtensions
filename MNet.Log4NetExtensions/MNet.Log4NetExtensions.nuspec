@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MNet.Log4NetExtensions</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Matjaz Prtenjak</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/MPrtenjak/MNet.Log4NetExtensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Log4Net Extension for accumulation logs for some period of time and process logging only if enough messages are received</description>
+    <copyright>Copyright MNet © 2018</copyright>
+    <tags>log4net</tags>
+  </metadata>
+</package>
