@@ -1,10 +1,30 @@
 # MNet.Log4NetExtensions
 
-This library is based on https://github.com/KentorIT/Log4NetExtensions library, but serves another purpose. With this filter you can set some specific time frame and filter will forward log only if enough messages are received in that specific time frame.
+This library is based on https://github.com/KentorIT/Log4NetExtensions library.
+
+It has two extensions:
+
+1. __Conversion Pattern__: where every log send to log4net is converted into ONE line, so multiline logs (like exceptions...) are written in one line.
+1. __Filter__: where you can set some specific time frame and filter will forward log only if enough messages are received in that specific time frame.
+
+## Conversion Pattern
+
+Usage is extremely easy. just add layout and instead of %message use %one_line_message
+
+### Example
+
+```xml
+  <layout type="MNet.Log4NetExtensions.OneLineMessagePatternLayout, MNet.Log4NetExtensions">
+    <conversionPattern value="%date %level %logger - %one_line_message %newline" />
+  </layout>
+```
+
+## Filter
+With this filter you can set some specific time frame and filter will forward log only if enough messages are received in that specific time frame.
 
 This means that if you set time frame to 1 minute and buffer to 5 messages. Filter will pass 6th message, if it is received less than 1 minute after first message. After processing the message, buffer is cleared!
 
-## How is this useful?
+### How is this useful?
 
 When web apps are running at night, there can be some errors. If one user is having a problem in the middle of the night, I will not get up. But if there are 5 errors in 1 hour, then there is some kind of a problem and I will have to investigate it.
 
@@ -34,7 +54,7 @@ And that is the whole purpose of this filter. I setup file log which is logging 
 </appender>
 ```
 
-## Example
+### Example
 
 Filter is set as:
 
